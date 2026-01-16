@@ -1,0 +1,311 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* div */
+.div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.icons {
+    font-size: 20px;
+}
+.div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.icons {
+    font-size: 20px;
+}
+/* Menu seria a informação na parte de seleão de compras do site*/
+
+.menu {
+    background-color: #7a3a00;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration:none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+
+/*  Titulo da parte do carrinho de compras */
+
+.titulo-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #7a3a00;
+    border-bottom: 3px solid #7a3a00;
+    width: fit-content;
+}
+
+/* Etapas do carrinho de compras para seleção final da compras*/
+
+.etapas{
+    display: flex;
+    gap: 10px;
+}
+
+.etapa{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #e6a57a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estapa-ativa {
+    background-color: #7a3a00;
+}
+
+/* Div da Tabela */
+.produtos-final {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: #7a3a00;
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.produtos-final .center {
+    text-align: center; /*Deixando a escrita da palavra (quantidade) no centro junto com quantidade. */
+}
+
+.produtos-final .right{
+    text-align: center; /*Deixando a escrita da palavra (valor) no centro para que fique junto com o valor.*/
+}
+
+/* Items da Tabela do carrinho */
+.item-produto {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #7a3a00;
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.produto img {
+    width: 95px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Quantidade */
+.quantidade {
+    text-align: center;
+}
+
+.quantidade button {
+    padding: 5px 10px;
+}
+
+.quantidade input {
+    width: 40px;
+    text-align: center;
+}
+
+.remove {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Preço */
+
+.price small {
+    display: block;
+    color: gray;
+    text-decoration: line-through;
+    
+}
+.price {
+    text-align: center;
+}
+
+
+.envio {
+    margin-top: 25px;
+}
+
+.envio p {
+    margin-bottom: 10px;
+}
+
+.cep {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cep input {
+    padding: 5px;
+    width: 120px;
+}
+
+.cep button {
+    background-color: #7a3a00;
+    color: #fff;
+    border: none;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+.cep-link {
+    display: inline-block;
+    margin-top: 5px;
+    color: #7a3a00;
+    font-size: 13px;
+}
+
+/* Rodape do Carrinho */
+
+.rodape-carrinho {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+.total span {
+    color: #e6a57a;
+    font-weight: bold;
+}
+
+.final {
+    background-color: #7a3a00;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Container Principal do Header */
+.main-body {
+  display: flex;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: #fff;
+  height: 80px; /* Defina uma altura fixa se desejar */
+}
+
+/* 1. O logo ocupa o lado esquerdo */
+.logo {
+  flex: 1; /* Faz esse bloco crescer e ocupar o espaço disponível na esquerda */
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* 2. A barra de pesquisa fica no centro absoluto */
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #632d00;
+  border-radius: 50px;
+  padding: 5px 15px;
+  width: 500px; /* Tamanho fixo para garantir a centralização */
+  margin: 0 20px; /* Margem lateral de segurança */
+}
+
+/* 3. As ações ocupam o lado direito */
+.header-actions {
+  flex: 1; /* Faz esse bloco crescer igual ao logo, equilibrando o centro */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+}
+
+.action-item i, .account-link i {
+  font-size: 28px;
+  color: #632d00;
+}
+
+.account-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+}
+
+.account-text {
+  display: flex;
+  flex-direction: column; /* Coloca "minha" em cima de "conta" */
+  text-align: right;
+  line-height: 1.1;
+  color: #632d00;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.account-text strong {
+  text-transform: lowercase; /* Mantém o estilo da imagem */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #632d00; /* Cor marrom do contorno */
+  border-radius: 50px;       /* Deixa as bordas bem arredondadas */
+  padding: 5px 15px;
+  width: 100%;
+  max-width: 500px;          /* Limita o tamanho horizontal */
+  height: 40px;
+}
+
+.search-input {
+  border: none;
+  outline: none;             /* Remove o contorno azul ao clicar */
+  flex-grow: 1;              /* Faz o input ocupar o espaço central */
+  padding: 0 10px;
+  font-size: 16px;
+  color: #a68b7c;            /* Cor do texto placeholder */
+}
+
+.search-icon, .mic-button {
+  color: #632d00;            /* Cor marrom dos ícones */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Estilo para mudar a cor do placeholder */
+.search-input::placeholder {
+  color: #c0a99a;
+}
+
+.logo img{
+  width: 15%;
+}
+
+.logo a{
+  width:100%;
+}
