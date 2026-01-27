@@ -1,0 +1,452 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==================== HEADER ==================== */
+
+/* Container Principal do Header */
+.main-body {
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #fff;
+    height: 80px;
+}
+
+/* Logo no lado esquerdo */
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo img {
+    width: 15%;
+    max-width: 150px;
+}
+
+.logo a {
+    width: 100%;
+}
+
+/* Barra de pesquisa no centro */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #632d00;
+    border-radius: 50px;
+    padding: 5px 15px;
+    width: 500px;
+    height: 40px;
+    margin: 0 20px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #a68b7c;
+}
+
+.search-input::placeholder {
+    color: #c0a99a;
+}
+
+.search-icon,
+.mic-button {
+    color: #632d00;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Ações no lado direito */
+.header-actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+.action-item i,
+.account-link i {
+    font-size: 28px;
+    color: #632d00;
+}
+
+.account-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.account-text {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    line-height: 1.1;
+    color: #632d00;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.account-text strong {
+    text-transform: lowercase;
+}
+
+/* ==================== MENU ==================== */
+
+.menu {
+    background-color: #7a3a00;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* ==================== TÍTULO CARRINHO ==================== */
+
+.titulo-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+h1 {
+    color: #7a3a00;
+    border-bottom: 3px solid #7a3a00;
+    width: fit-content;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+/* ==================== ETAPAS ==================== */
+
+.etapas {
+    display: flex;
+    gap: 10px;
+}
+
+.etapa {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #e6a57a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.etapa-ativa {
+    background-color: #7a3a00;
+}
+
+/* ==================== TABELA DE PRODUTOS ==================== */
+
+/* Cabeçalho da tabela */
+.produto-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: #7a3a00;
+    color: #fff;
+    padding: 10px 5%;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.produto-header .center {
+    text-align: center;
+}
+
+.produto-header .right {
+    text-align: center;
+}
+
+/* Item do produto */
+.produto {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 2px solid #ddd;
+    gap: 20px;
+}
+
+.produto-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.produto-info img {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.produto-info p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* ==================== QUANTIDADE ==================== */
+
+.quantidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.controles-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-mais,
+.btn-menos {
+    width: 30px;
+    height: 30px;
+    background-color: #7a3a00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-mais:hover,
+.btn-menos:hover {
+    background-color: #5a2a00;
+}
+
+.qntd {
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 30px;
+    text-align: center;
+}
+
+.remove {
+    background-color: transparent;
+    color: #e74c3c;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 5px 10px;
+}
+
+.remove:hover {
+    color: #c0392b;
+}
+
+/* ==================== PREÇO ==================== */
+
+.price {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price strong {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7a3a00;
+}
+
+.price small {
+    display: block;
+    color: gray;
+    text-decoration: line-through;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* ==================== SEÇÃO DE ENVIO E CHECKOUT ==================== */
+
+.envio {
+    margin: 40px 5%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.envio p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Container que une CEP com Total e Botões */
+.cep-checkout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cep-section {
+    display: flex;
+    align-items: center;
+}
+
+.cep {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cep label {
+    font-weight: bold;
+    color: #7a3a00;
+}
+
+.cep input {
+    padding: 8px;
+    width: 120px;
+    border: 2px solid #7a3a00;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.cep button {
+    background-color: #7a3a00;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cep button:hover {
+    background-color: #5a2a00;
+}
+
+.cep-link {
+    display: block;
+    margin-top: 10px;
+    color: #7a3a00;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+/* Lado direito: Total e Botões */
+.checkout-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.total-etiqueta {
+    color: #D2691E;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.total-valor {
+    color: #8B4513;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn-continuar {
+    color: #D2691E;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.btn-continuar:hover {
+    color: #a0501a;
+}
+
+.btn-finalizar {
+    background-color: #8B4513;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.btn-finalizar:hover {
+    background-color: #6d3410;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+@media (max-width: 768px) {
+    .main-body {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .search-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .produto {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .cep-checkout-container {
+        flex-direction: column;
+    }
+
+    .checkout-section {
+        flex-direction: column;
+    }
+}
